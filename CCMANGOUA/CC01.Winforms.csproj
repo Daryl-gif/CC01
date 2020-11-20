@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FmEcole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FmEcole.Designer.cs">
+      <DependentUpon>FmEcole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmEtudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmEtudiant.Designer.cs">
+      <DependentUpon>FmEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmParent.Designer.cs">
+      <DependentUpon>FmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmEcole.resx">
+      <DependentUpon>FmEcole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmEtudiant.resx">
+      <DependentUpon>FmEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmParent.resx">
+      <DependentUpon>FmParent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CC01.BO\CC01.BO.csproj">
+      <Project>{08b76872-2128-4ae7-a0bd-01e655c76c30}</Project>
+      <Name>CC01.BO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

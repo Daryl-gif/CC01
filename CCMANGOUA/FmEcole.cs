@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CCMANGOUA
 {
-    public partial class Form1 : Form
+    public partial class FmEcole : Form
     {
-        public Form1()
+        public FmEcole()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FmEcole_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
