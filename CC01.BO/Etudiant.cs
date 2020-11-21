@@ -25,19 +25,19 @@ namespace CC01.BO
                 return Nom + " " + Prenom;
             }
         }
-        public string Identifiant { get; set; }
-        public string Email { get; set; }
+        public string Reference { get; set; }
+        public string Email {get; set; }
         public int Contact { get; set; }
-        public DateTime Born { get; set; }
-        public string Lieu { get; set; }
-        public Etudiant(string nom,string prenom,string identifiant,int contact,DateTime born,string lieu,string email)
+        public DateTime Lieu { get; set; }
+        public string A { get; set; }
+        public Etudiant(string nom,string prenom,string Reference,int contact,DateTime, Lieu,string A,string email)
         {
             Nom = nom;
             Prenom = prenom;
-            Identifiant = identifiant;
+            Reference = reference;
             Email = email;
-            Born = born;
             Lieu = lieu;
+            A = a;
             Contact = contact;
 
         }
